@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: classpath:/db/changelog-1-create-house-table.yml
+  - include:
+      file: classpath:/db/changelog-2-insert-initial-data.yml
