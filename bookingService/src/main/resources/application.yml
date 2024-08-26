@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydb
+    username: myuser
+    password: mypassword
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  liquibase:
+    change-log: classpath:/db.changelog/changelog/db.main-changelog.yml  # Убедитесь, что путь верный
+#  sql:
+#    init:
+#      script: classpath:/db/changelog.sql  # Для инициализации базы данных с SQL скриптами, если нужно
