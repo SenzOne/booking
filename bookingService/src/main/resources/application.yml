@@ -1,3 +1,6 @@
+server:
+  port: 8081
+
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/mydb
@@ -16,4 +19,5 @@ spring:
 #    change-log: classpath:/db/changelog/db.changelog-master.yml
 #  sql:
 #    init:
+
 #      script: classpath:/db/changelog.sql  # Для инициализации базы данных с SQL скриптами, если нужно
