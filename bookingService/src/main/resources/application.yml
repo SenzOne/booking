@@ -11,7 +11,9 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
   liquibase:
-    change-log: classpath:/db.changelog/changelog/db.main-changelog.yml  # Убедитесь, что путь верный
+    change-log: classpath:/db/changelog-master.yml  # Убедитесь, что путь верный
+#  liquibase:
+#    change-log: classpath:/db/changelog/db.changelog-master.yml
 #  sql:
 #    init:
 #      script: classpath:/db/changelog.sql  # Для инициализации базы данных с SQL скриптами, если нужно
